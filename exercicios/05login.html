@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head></head>
+<body>
+    <p>
+        <script>
+            var _Email = "fulano@gmail";
+            var _password = "123456";
+             
+            var _EmailTest = prompt("Email: ");
+            var _passwordTest = prompt("Password: ");
+           /* Verificação de Login e senha*/
+            alert("LOGIN");
+            if ((_Email == _EmailTest) && (_password == _passwordTest)){
+                alert("Login CONCLUED!");
+            }else{
+                alert("ERROR!\n");
+            }
+            if ((_Email == _EmailTest) && (_password != _passwordTest)){
+                alert("Email ok!\nPassword wrong\n!\nLogin FAILED!")
+            }
+            if ((_password == _passwordTest) && (_Email != _EmailTest)){
+                alert("Email wrong!\nPassword ok\n!\nLogin FAILED!")
+            } 
+
+        </script>
+    </p>
+</body>
+</html>
