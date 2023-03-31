@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+<head></head>
+<body>
+    <p>
+        <script>
+           //Calculing the area of a triangle from the measurement of the three sides
+          //With Heron's formula
+          //p = (9 + 7 + 14) / 2
+          //p = 30 / 2
+          //p = 15
+
+          //A = √15(15 – 9)(15 – 7)(15 – 14)
+          //A = √15 * 6 * 8 * 1
+          //A = √720
+          //A = 26,83 cm2
+          function Heron(A, B, C){
+          P = ((A + B + C) / 2);
+          Q = P * (P - A) * (P - B) * (P - C);
+          var area = Math.pow(Q, 1/2);
+          return area;
+          }
+          A = prompt("Type the value for A: ");
+          B = prompt("Type the value for B: ");
+          C = prompt("Type the value for C: ");
+          document.write("Result = " + (Heron(A, B, C)));
+        </script>
+    </p>
+</body>
+</html>
